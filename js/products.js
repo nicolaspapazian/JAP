@@ -19,13 +19,14 @@ async function main() {
     for (let i = 0; i < productosArreglo.length; i++) {
         for (let j = 0; j < productosArreglo[i].length; j++) {
 
-            let category = productosArreglo[i][j]
+            let category = productosArreglo[i][j].id
             console.log(productosArreglo[i][j])
 
 
 
             htmlContentToAppend += `
-            <div onclick="setCatID(${category.id})" class="list-group-item list-group-item-action cursor-active">
+            
+            <div onclick="setCatID(${category})" class="list-group-item list-group-item-action cursor-active">
                 <div class="row">
                     <div class="col-3">
                         <img src="${productosArreglo[i][j].image}" alt="${productosArreglo[i][j].description}" class="img-thumbnail">
