@@ -33,8 +33,11 @@ async function main() {
                     </div>
                     <div class="col">
                         <div class="d-flex w-100 justify-content-between">
-                            <h4 class="mb-1">${productosArreglo[i][j].name}</h4>
+                            <h4 class="mb-1">${productosArreglo[i][j].name}</h4> <h4 class="mb-1"> asdasd asdasd </h4>
+                            </br>
+
                             <small class="text-muted">${productosArreglo[i][j].soldCount} artículos</small>
+
                         </div>
                         <p class="mb-1">${productosArreglo[i][j].description}</p>
                     </div>
