@@ -33,10 +33,12 @@ async function main() {
                     </div>
                     <div class="col">
                         <div class="d-flex w-100 justify-content-between">
-                            <h4 class="mb-1">${productosArreglo[i][j].name}</h4> <h4 class="mb-1"> asdasd asdasd </h4>
+                            <h4 class="mb-1">${productosArreglo[i][j].name}
+                            <h4 class="mb-1">${productosArreglo[i][j].currency} ${productosArreglo[i][j].cost}
+
                             </br>
 
-                            <small class="text-muted">${productosArreglo[i][j].soldCount} artículos</small>
+                            <small class="text-muted">${productosArreglo[i][j].soldCount} artï¿½culos</small>
 
                         </div>
                         <p class="mb-1">${productosArreglo[i][j].description}</p>
@@ -66,7 +68,7 @@ async function main() {
         <div class="col">
             <div class="d-flex w-100 justify-content-between">
                 <h4 class="mb-1">${productosArreglo[i][j].name}</h4>
-                <small class="text-muted">${productosArreglo[i][j].soldCount} artículos</small>
+                <small class="text-muted">${productosArreglo[i][j].soldCount} artï¿½culos</small>
             </div>
             <p class="mb-1">${productosArreglo[i][j].description}</p>
         </div>
@@ -104,7 +106,7 @@ function showCategoriesList() {
                     <div class="col">
                         <div class="d-flex w-100 justify-content-between">
                             <h4 class="mb-1">${category.name}</h4>
-                            <small class="text-muted">${category.productCount} artículos</small>
+                            <small class="text-muted">${category.productCount} artï¿½culos</small>
                         </div>
                         <p class="mb-1">${category.description}</p>
                     </div>
@@ -159,7 +161,7 @@ function showCategoriesList() {
                  <div class="col">
                      <div class="d-flex w-100 justify-content-between">
                          <h4 class="mb-1">${category.name}</h4>
-                         <small class="text-muted">${category.productCount} artículos</small>
+                         <small class="text-muted">${category.productCount} artï¿½culos</small>
                      </div>
                      <p class="mb-1">${category.description}</p>
                  </div>
