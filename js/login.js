@@ -1,32 +1,19 @@
-document.getElementById("botonIngreso").addEventListener("click", saveEmail)
-
-document.getElementById("botonIngreso").addEventListener("click", validacionLogin)
+document.getElementById("botonIngreso").addEventListener("click", validarYguardar)
 
 
-function saveEmail() {
+
+function validarYguardar() {
     var mail = document.getElementById("exampleInputEmail1").value
     var password = document.getElementById("exampleInputPassword1").value
     var checkBox = document.getElementById("exampleCheck1").checked
     if (mail != null && password != null && checkBox ) {
-    localStorage.setItem("user",JSON.stringify(mail) )
-    let username = localStorage.getItem("user")
-    document.getElementById("username").innerHTML = username   
-
-
-
-   
+        localStorage.setItem("user",JSON.stringify(mail) )
+        let username = localStorage.getItem("user") 
+        document.querySelectorAll("email").innerHTML = username   
+         
     }
-     
-}
-
-
-
-function validacionLogin() {
-    var mail = document.getElementById("exampleInputEmail1").value
-    var password = document.getElementById("exampleInputPassword1").value
-    var checkBox = document.getElementById("exampleCheck1").checked
     if (mail != null && password != null && checkBox ) {
-        window.location.replace("https://nicolaspapazian.github.io/JAP/")
+        document.location.replace("main.html")
 
 
 
@@ -34,6 +21,11 @@ function validacionLogin() {
         alert("Debe completar ambos campos.")
     }
 
-  
+    
+
+    
+     
 }
+
+
 
