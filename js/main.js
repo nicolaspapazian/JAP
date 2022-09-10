@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', mostrarUser)
 
 
 function mostrarUser (){
-    let username = localStorage.getItem("user") 
-    document.getElementById("email").innerHTML = username   
+    const username = (localStorage.getItem("user"))
+    const usernameCleansed = username.replace(/['"]+/g, '');
+    document.getElementById("email").innerHTML = usernameCleansed
 }
