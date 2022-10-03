@@ -41,6 +41,7 @@ function setCatID(id) {
 }
 
 function showCategoriesList(){
+    currentCategoriesArray.push()
 
     let htmlContentToAppend = "";
     for(let i = 0; i < currentCategoriesArray.length; i++){
@@ -68,6 +69,7 @@ function showCategoriesList(){
         }
 
         document.getElementById("cat-list-container").innerHTML = htmlContentToAppend;
+
     }
 }
 
